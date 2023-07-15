@@ -13,7 +13,7 @@ from kindle2notion.reading import read_raw_clippings
 def test_parse_raw_clippings_text_should_return_a_dict_with_all_the_parsed_information():
     # Given
     test_clippings_file_path = (
-        Path(__file__).parent.absolute() / "test_data/Test Clippings.txt"
+            Path(__file__).parent.absolute() / "test_data/Test Clippings.txt"
     )
     raw_clippings_text = read_raw_clippings(test_clippings_file_path)
 

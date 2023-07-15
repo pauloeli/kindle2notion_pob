@@ -6,7 +6,7 @@ from kindle2notion.reading import read_raw_clippings
 def test_read_raw_clippings_should_return_all_clippings_data_as_string():
     # Given
     test_clippings_file_path = (
-        Path(__file__).parent.absolute() / "test_data/Test Clippings.txt"
+            Path(__file__).parent.absolute() / "test_data/Test Clippings.txt"
     )
 
     expected = """Title 1: A Great Book (Horowitz, Ben)

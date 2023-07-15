@@ -23,11 +23,11 @@ from kindle2notion.reading import read_raw_clippings
     help="Set to False if you don't want to store the book cover in Notion.",
 )
 def main(
-    notion_api_auth_token,
-    notion_database_id,
-    clippings_file,
-    enable_highlight_date,
-    enable_book_cover,
+        notion_api_auth_token,
+        notion_database_id,
+        clippings_file,
+        enable_highlight_date,
+        enable_book_cover,
 ):
     notion = notional.connect(auth=notion_api_auth_token)
     db = notion.databases.retrieve(notion_database_id)
